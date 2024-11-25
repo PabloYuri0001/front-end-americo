@@ -1,0 +1,114 @@
+/* Definindo as cores principais */
+:root {
+    --cor-fundo: #121212; /* Fundo escuro */
+    --cor-texto: #e0e0e0; /* Texto em cinza claro */
+    --cor-destaque: #ff4081; /* Rosa vibrante para títulos e destaques */
+    --cor-botao: #4caf50; /* Verde para botões */
+    --cor-botao-hover: #388e3c; /* Verde mais escuro para hover */
+    --cor-secundario: #ff5252; /* Vermelho vibrante para ações secundárias */
+}
+
+/* Hides the elements initially */
+.hidden {
+    display: none;
+}
+
+/* Fundo da página e cor do texto */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Títulos */
+h1, h2 {
+    color: var(--cor-destaque);
+}
+
+/* Estilo do formulário e dos inputs */
+.form-container, .button-container {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input, select {
+    background-color: #333;
+    color: var(--cor-texto);
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Botões */
+button {
+    background-color: var(--cor-botao);
+    border: none;
+    color: var(--cor-texto);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+/* Estilos específicos para botões na listagem */
+#productList li button {
+    background-color: var(--cor-secundario);
+    color: var(--cor-texto);
+    margin-left: 5px;
+}
+
+#productList li button:hover {
+    background-color: #e53935;
+}
+
+/* Listagem de produtos */
+#productList {
+    margin-top: 20px;
+}
+
+#productList li {
+    background-color: #2a2a2a;
+    color: var(--cor-texto);
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Detalhes do produto */
+#productDetails {
+    background-color: #1c1c1c;
+    color: var(--cor-texto);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+#productDetails h5 {
+    color: var(--cor-destaque);
+}
+
+/* Estilos de navegação e botões principais */
+button.btn-primary {
+    background-color: var(--cor-destaque);
+    border-radius: 5px;
+}
+
+#productListPage, #productByIdPage {
+    margin-top: 30px;
+}
+
+#productListPage h2, #productByIdPage h2 {
+    color: var(--cor-destaque);
+}
